@@ -1,3 +1,6 @@
+from ctypes import pythonapi
+
+
 def statistics():
     """
     Ejercicio 5 - Estadísticas Simples
@@ -13,9 +16,7 @@ def statistics():
     num3 = 23
     num4 = 12
 
-    prom=(num1+num2+num3+num4)/4
-    print(prom)
-    print(num3)
-    print(num1)
-    rango=(num3-num1)
-    print(rango)
+    print("Promedio:", (num1 + num2 + num3 + num4) / 4)
+    print("Máximo:", max(num1, num2, num3, num4))
+    print("Mínimo:", min(num1, num2, num3, num4))
+    print("Rango:", max(num1, num2, num3, num4) - min(num1, num2, num3, num4))
