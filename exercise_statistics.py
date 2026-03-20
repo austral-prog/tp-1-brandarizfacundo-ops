@@ -1,6 +1,3 @@
-from ctypes import pythonapi
-
-
 def statistics():
     """
     Ejercicio 5 - Estadísticas Simples
@@ -11,12 +8,12 @@ def statistics():
     3. El mínimo
     4. El rango (diferencia entre máximo y mínimo)
     """
-    num1 = 1
+    num1 = 15
     num2 = 8
     num3 = 23
     num4 = 12
-
-    print("Promedio:", (num1 + num2 + num3 + num4) / 4)
-    print("Máximo:", max(num1, num2, num3, num4))
-    print("Mínimo:", min(num1, num2, num3, num4))
-    print("Rango:", max(num1, num2, num3, num4) - min(num1, num2, num3, num4))
+    print((num1 + num2 + num3 + num4) / 4)
+    print(max(num1, num2, num3, num4))
+    print(min(num1, num2, num3, num4))
+    print(max(num1, num2, num3, num4) - min(num1, num2, num3, num4))
+statistics()
